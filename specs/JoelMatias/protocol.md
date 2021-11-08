@@ -8,8 +8,10 @@ Le protocole va servir à mettre en place la communication entre un client qui *
 
 - **Protocole utilisé :** TCP 
 - **Serveur**
-  - **Adresse :** localhost
-  - **Port :** 8080
+  - **Adresses :** 
+    - 10.192.104.133
+    - 10.192.107.128
+  - **Port :** 4269
 - **Connexion**
   - **Parle d'abord :** Le serveur
   - **Ferme la connexion :** Le client quand il a plus de calculs à demander au serveur
@@ -20,9 +22,13 @@ Le protocole va servir à mettre en place la communication entre un client qui *
 
 #### Bienvenue
 
-Message de bienvenue que le serveur enverra afin de confirmer la connexion et qui va prévient le client qu'il est prêt à recevoir un calcul.
+Message de bienvenue que le serveur enverra afin de confirmer la connexion et qui va prévient le client qu'il est prêt à recevoir un calcul. Il va également lui présenter les opérations possibles et la syntaxe à utiliser.
 
-Le message sera le suivant : "Bonjour et bienvenue. Quel est le calcul dont vous souhaitez connaitre le résultat?".
+Le message sera le suivant : 
+
+"Bonjour et bienvenue. Quel est le calcul dont vous souhaitez connaitre le résultat?
+
+Opérations possibles : Addition (+), Soustration (-), Multiplication (*), Division (/)".
 
 
 
@@ -83,11 +89,11 @@ Le serveur enverra un message d'erreur si l'un des cas suivants arrive :
 
 S : Bonjour et bienvenue. Quel est le calcul dont vous souhaitez connaitre le résultat?
 
-C : 3,2,+
+C : 3 2 +
 
 S : OK 5
 
-C : 5,1,(
+C : 5 1 (
 
 S : Erreur : Opération inexistante
 
