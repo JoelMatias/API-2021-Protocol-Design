@@ -28,7 +28,9 @@ Le message sera le suivant :
 
 "Bonjour et bienvenue. Quel est le calcul dont vous souhaitez connaitre le résultat?
 
-Opérations possibles : Addition (+), Soustration (-), Multiplication (*), Division (/)".
+Opérations possibles : Addition (+), Soustration (-), Multiplication (*), Division (/)
+
+Pour quitter, tapez "Bye Bye".
 
 
 
@@ -88,6 +90,10 @@ Le serveur enverra un message d'erreur si l'un des cas suivants arrive :
 ###### Discussion entre le serveur (S) et la client (C)
 
 S : Bonjour et bienvenue. Quel est le calcul dont vous souhaitez connaitre le résultat?
+
+​	Opérations possibles : Addition (+), Soustration (-), Multiplication (*), Division (/)
+
+​	Pour quitter, tapez "Bye Bye
 
 C : 3 2 +
 
